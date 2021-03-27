@@ -6,9 +6,10 @@
 
 - Heroku deployment:
 - Example requests to the API
-  - 
-  - 
-  
+  -
+  -
+- [Requirements](https://docs.google.com/document/d/1qpvi7JrHxaTUItgOC-WMRw9ofK566xQYVt0QF4-CXh8/edit#)
+
 ## Setup
 
 ### `.env`
@@ -26,7 +27,7 @@
   - Parameters
     - q=`<topic>`
   - Results:
-    - array of questions
+    - array of question numbers
 
 ## Tests
 

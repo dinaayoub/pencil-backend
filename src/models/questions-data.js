@@ -1,0 +1,20 @@
+'use strict';
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+///// THIS FILE WAS ONLY NEEDED WHEN SETTING DATA UP IN DB. THIS COLLECTION IS UNNECESSARY.///////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+// class QuestionData {
+//   constructor(model) {
+//     this.model = model;
+//   }
+
+//   async get() {
+//     //retrieve all questions
+//     let result = await this.model.find({});
+//     return result;
+//   }
+
+// }
+
+// module.exports = QuestionData;

@@ -6,8 +6,9 @@
 
 - Heroku deployment:
 - Example requests to the API
-  -
-  -
+  - GET https://dina-pencil-backend.herokuapp.com/search?q=Cell%20Structure%20and%20Organisation
+  - GET https://dina-pencil-backend.herokuapp.com/search?q=State,%20in%20simple%20terms,%20the%20relationship%20between%20cell%20function%20and%20cell%20structure%20for%20the%20following:
+
 - [Requirements](https://docs.google.com/document/d/1qpvi7JrHxaTUItgOC-WMRw9ofK566xQYVt0QF4-CXh8/edit#)
 
 ## Setup

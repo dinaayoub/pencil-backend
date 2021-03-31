@@ -7,7 +7,7 @@ class Data {
 
   async get(_id) {
     if (_id) {
-      //get rid of any extra quotation marks inserted into the data to allow commas in the text
+      //get rid of any extra quotation marks inserted into the data to allow commas in the imported CSV text
       _id = _id.replace(/"/g, '');
 
       //escape any dashes so that the returned regex match results are accurate
@@ -38,23 +38,18 @@ class Data {
       //return questions.sort((a, b) => a - b);
     }
     else {
-      //return all topics. We would remove this if we don't want to allow this functionality but I think it would be useful for allowing admins to add topics.
+      //return all topics. We would remove this if we don't want to allow this functionality but I think it would be useful for allowing admins to view the topics tree.
       let results = await this.model.find({});
       return results;
     }
   }
 
-  /////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////
   ///// THIS SECTION WAS ONLY NEEDED WHEN SETTING DATA UP IN DB. /////
+  ///// This code can be re-used when adding topics to the db.   /////
   ////////////////////////////////////////////////////////////////////
 
   // async put(array) {
-  //   console.log(array);
-  //   console.log(`--------------------------------PUTTING---------------------------`);
-  //   console.log(`--------------------------------PUTTING---------------------------`);
-  //   console.log(`--------------------------------PUTTING---------------------------`);
-  //   console.log(`--------------------------------PUTTING---------------------------`);
-  //   console.log(`--------------------------------PUTTING---------------------------`);
   //   this.model.create(array);
   // }
 }

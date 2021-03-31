@@ -13,14 +13,15 @@ router.get('/search', search);
 
 async function search(req, res) {
   let query = req.query.q;
-
   let record = await topics.get(query);
-  console.log(record);
   res.status(200).send(record);
 }
 
+module.exports = router;
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-///// THIS SECTION WAS ONLY NEEDED WHEN SETTING DATA UP IN DB. THIS COLLECTION IS UNNECESSARY./////
+///// THIS SECTION WAS ONLY NEEDED WHEN SETTING DATA UP IN DB. THIS COLLECTION IS UNNECESSARY.  /////
+////  Some of the code can be reused to add/update new topics with a POST/PUT call.             ///// 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // const questionSchema = require('../models/questions');
@@ -43,13 +44,8 @@ async function search(req, res) {
 //         return question;
 //       }
 //     });
-//     console.log(filteredQuestionsList);
 //     filteredQuestionsList.forEach(question => topic.questionsArray.push(question._id));
 //   });
-
 //   topics.put(results);
-
 //   res.status(200).send(results);
-
 // }
-module.exports = router;

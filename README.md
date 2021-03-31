@@ -4,17 +4,20 @@
 
 ## Links
 
-- Heroku deployment:
+- Heroku deployment: https://dina-pencil-backend.herokuapp.com/search
+  - query string parameters - q: exact string of topic title
+  - if no query is sent, the API will return the entire list of topics and their corresponding questions.
 - Example requests to the API
-  -
-  -
+  - GET [https://dina-pencil-backend.herokuapp.com/search?q=Cell%20Structure%20and%20Organisation]
+  - GET [https://dina-pencil-backend.herokuapp.com/search?q=State,%20in%20simple%20terms,%20the%20relationship%20between%20cell%20function%20and%20cell%20structure%20for%20the%20following:]
+  - GET [http://dina-pencil-backend.herokuapp.com/search]
 - [Requirements](https://docs.google.com/document/d/1qpvi7JrHxaTUItgOC-WMRw9ofK566xQYVt0QF4-CXh8/edit#)
 
 ## Setup
 
 ### `.env`
 
-- `PORT` - Port number of your choosing for the server to run on. 
+- `PORT` - Port number of your choosing for the server to run on.
 - `MONGOOSE_URI` - the uri to your mongo db including username and password
 
 ### How to run the server
@@ -28,25 +31,6 @@
     - q=`<topic>`
   - Results:
     - array of question numbers
-
-## Tests
-
-### How to run the tests
-
-- `npm test`
-
-### Test cases
-
-- [] 
-- [] 
-- [] 
-- [] 
-- [] 
-- [] 
-
-### Coverage
-
-- x% code coverage
 
 ## Domain Modeling
 

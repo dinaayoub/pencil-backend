@@ -8,6 +8,13 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 app.use(cors());
 
+const notFoundError = require('./error-handlers/404');
+
+const searchRouter = require('./routes/search');
+app.use(searchRouter);
+
+app.use('*', notFoundError);
+
 function start(port, mongoose_uri) {
   if (port) {
     mongoose.connect(mongoose_uri, {

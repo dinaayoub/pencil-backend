@@ -8,8 +8,7 @@ mongoose.set('useCreateIndex', true);
 
 const topics = mongoose.Schema({
   _id: { type: String, required: true },
-  path: { type: String },
-  questions: { type: Array }
+  questionsArray: { type: Array }
 });
 
 module.exports = mongoose.model('topics', topics);
